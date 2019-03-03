@@ -1,0 +1,27 @@
+---
+layout: default
+title: "Justin Holm"
+---
+<div class="introduction">
+  <p>
+    Justin Holm is a multidisciplinary software engineer with a focus on innovative solutions for technology and healthcare to empower people to live healthier lives.
+  </p>
+</div>
+
+<hr>
+
+<div class="toc">
+  <h2>Writings</h2>
+  <ul class="texts">
+  {% for item in site.texts %}
+    <li class="text-title">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+
+
+

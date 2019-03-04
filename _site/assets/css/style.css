@@ -97,7 +97,8 @@ a:focus {
 
 /* Headings*/
 h1, h2, h3, h4, h5, h6 {
-  font-family: sans-serif;
+  font-family: "Computer Modern Serif", serif;
+  font-style: italic;
   margin-bottom: .5rem;
   font-weight: 300;
   color: #404040;
@@ -675,7 +676,6 @@ ol.bibliography {
 
 /*
   Line layouts for prose-poetry and theater
-
   To use these layouts you need to add the classes to your markdown or HTML lines.
   (ex. "- {:.centered} hello!")
 */
@@ -704,6 +704,18 @@ li.prose {
 
 li.prose-indent {
   text-indent: 2rem; }
+
+/*------- CUSTOM CLASSES --------*/
+.projects ul li {
+  padding-top: .8em; }
+  .projects ul li:nth-child(1) {
+    padding-top: 0; }
+
+.projects ul .project-item {
+  border-bottom: 1px solid #efefef; }
+
+.projects ul li p {
+  font-size: .8em; }
 
 .highlight .hll {
   background-color: #ffc; }

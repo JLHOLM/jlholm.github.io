@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Justin Holm"
+---
+<div class="introduction">
+  <p>
+    Below is a collection of my most recent and most cherished writings. I hope you enjoy them as much as I enjoyed writing them.
+  </p>
+  <small><small>Want to discuss one of my writings? email justin@justinholm.com.</small></small>
+</div>
+
+<hr>
+
+<div class="toc">
+  <h2>Writings</h2>
+  <ul class="texts">
+  {% for item in site.texts %}
+    <li class="text-title">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+
+
+
